@@ -22,18 +22,37 @@
         .nav-list {
             display: flex;
             list-style: none;
+            font-family: 'Eina02-Light';
+            font-weight: 400;
 
             li {
+                position: relative;
                 padding: 0 18px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
 
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 0%;
+                    height: 2px;
+                    z-index: 0;
+                    background: #ffffff;
+                    transition: all 0.65s ease;
+                }
+
+                &:hover::after {
+                    left: 0;
+                    width: 100%;
+                }
+
                 a {
                     text-decoration: none;
                     text-align: center;
                     font-size: 18px;
-                    font-weight: 300;
                     line-height: 35px;
                     letter-spacing: 0.5px;
                     color: $nav-item-color;
@@ -44,6 +63,11 @@
                 padding: 0px 25px;
                 border: 2px solid $nav-item-color;
                 border-radius: 50px;
+
+                &::after {
+                    content: '';
+                    width: 0;
+                }
             }
         }
     }

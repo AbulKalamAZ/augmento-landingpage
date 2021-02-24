@@ -1,1 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+// Eina02 - light
+@font-face {
+    font-family: Eina02-light;
+    src: url('../fonts/Eina02-Light.woff') format('woff'),
+        url('../fonts/Eina02-Light.ttf') format('truetype');
+}
+
+// Eina02 - regular
+@font-face {
+    font-family: Eina02-regular;
+    src: url('../fonts/Eina02-Regular.woff') format('woff'),
+        url('../fonts/Eina02-Regular.ttf') format('truetype');
+}
+
+// Eina02 - semibold
+@font-face {
+    font-family: Eina02-semibold;
+    src: url('../fonts/Eina02-SemiBold.woff') format('woff'),
+        url('../fonts/Eina02-SemiBold.ttf') format('truetype');
+}
+
+// Eina02 - bold
+@font-face {
+    font-family: Eina02-bold;
+    src: url('../fonts/Eina02-Bold.woff') format('woff'),
+        url('../fonts/Eina02-Bold.ttf') format('truetype');
+}
