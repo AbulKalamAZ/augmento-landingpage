@@ -60,10 +60,14 @@
 
 @media only screen and (min-width: 1960px) {
     .header {
-        padding: 50px 0;
+        padding: 50px 10%;
 
         .navbar {
-            padding: 0 17.5%;
+            padding: 0;
+
+            .nav-list {
+                margin-right: 100px;
+            }
         }
     }
 }
