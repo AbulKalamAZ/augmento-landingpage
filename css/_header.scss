@@ -32,23 +32,6 @@
                 justify-content: center;
                 align-items: center;
 
-                &::after {
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-                    left: 50%;
-                    width: 0%;
-                    height: 2px;
-                    z-index: 0;
-                    background: #ffffff;
-                    transition: all 0.65s ease;
-                }
-
-                &:hover::after {
-                    left: 0;
-                    width: 100%;
-                }
-
                 a {
                     text-decoration: none;
                     text-align: center;
