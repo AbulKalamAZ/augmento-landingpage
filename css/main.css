@@ -58,7 +58,7 @@
 
 .header .navbar .nav-list li {
   position: relative;
-  padding: 0 18px;
+  padding-right: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,6 +99,20 @@
   }
   .header .navbar .nav-list {
     margin-right: 100px;
+    padding: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 2260px) {
+  .header {
+    padding: 50px 10%;
+  }
+  .header .navbar {
+    padding: 0;
+  }
+  .header .navbar .nav-list {
+    margin-right: 200px;
+    padding: 0 30px;
   }
 }
 
@@ -196,7 +210,7 @@
     top: 0;
     right: 10%;
     width: 45%;
-    height: 90vh;
+    height: 80vh;
     background: linear-gradient(94.85deg, #009dff 0%, #68008c 100%);
     border-bottom-left-radius: 190px;
     border-bottom-right-radius: 190px;

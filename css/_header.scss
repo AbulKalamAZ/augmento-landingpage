@@ -27,7 +27,7 @@
 
             li {
                 position: relative;
-                padding: 0 18px;
+                padding-right: 25px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -67,6 +67,22 @@
 
             .nav-list {
                 margin-right: 100px;
+                padding: 0 30px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 2260px) {
+    .header {
+        padding: 50px 10%;
+
+        .navbar {
+            padding: 0;
+
+            .nav-list {
+                margin-right: 200px;
+                padding: 0 30px;
             }
         }
     }
