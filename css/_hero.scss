@@ -79,3 +79,20 @@
         z-index: -99;
     }
 }
+
+// For screen wider than 1960px
+
+@media only screen and (min-width: 1960px) {
+    .hero {
+        .container {
+            padding: 50px 17.5%;
+        }
+
+        .background-arrow {
+            position: absolute;
+            top: 430px;
+            left: 240px;
+            z-index: -99;
+        }
+    }
+}
