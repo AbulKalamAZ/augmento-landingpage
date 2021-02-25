@@ -70,6 +70,18 @@
                 }
             }
         }
+        .right-column {
+            position: relative;
+            width: 50%;
+
+            img {
+                position: absolute;
+                right: -80px;
+                top: -100px;
+                width: 125%;
+                height: auto;
+            }
+        }
     }
 
     .background-arrow {
@@ -103,6 +115,16 @@
             .left-column {
                 padding: 45px 120px 45px 0;
             }
+
+            .right-column {
+                img {
+                    position: absolute;
+                    right: 0px;
+                    top: -240px;
+                    width: 115%;
+                    height: auto;
+                }
+            }
         }
 
         .background-arrow {
@@ -110,6 +132,24 @@
             top: 430px;
             left: 0px;
             z-index: -99;
+        }
+    }
+}
+
+// For screen wider than 2560px
+
+@media only screen and (min-width: 2560px) {
+    .hero {
+        .container {
+            .right-column {
+                img {
+                    position: absolute;
+                    right: 0px;
+                    top: -235px;
+                    width: 115%;
+                    height: auto;
+                }
+            }
         }
     }
 }

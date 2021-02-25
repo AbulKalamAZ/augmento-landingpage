@@ -1,0 +1,158 @@
+.features {
+    width: 100%;
+
+    .container {
+        width: 100%;
+        padding: 400px 80px 50px 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .left-column {
+            width: 300px;
+            margin-bottom: 250px;
+
+            .feature-title {
+                font-family: 'Eina02-Bold';
+                font-size: 44px;
+                font-weight: 700;
+                line-height: 55px;
+                text-align: right;
+                color: $feature-title-color;
+
+                span {
+                    color: #ff8946;
+                }
+            }
+            .feature-subtitle {
+                margin-top: 10px;
+                font-family: 'Eina02-Regular';
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 16px;
+                text-align: right;
+                color: $feature-subheader-color;
+            }
+        }
+
+        .container-bg {
+            position: relative;
+            width: 45%;
+            height: 782px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .circle {
+                position: absolute;
+                width: 500px;
+                height: 500px;
+                background: rgba(212, 212, 212, 0.25);
+                border-radius: 50%;
+                z-index: -99;
+            }
+            .iphone-clay {
+                position: absolute;
+            }
+            .hook {
+                position: absolute;
+                bottom: 15px;
+                left: 12%;
+            }
+        }
+
+        .right-column {
+            width: 250px;
+
+            .feature {
+                margin-bottom: 30px;
+                h3 {
+                    font-family: 'Eina02-Bold';
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 26px;
+                    color: $feature-title-color;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-family: 'Eina02-Regular';
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 26px;
+                    color: $feature-subheader-color;
+                }
+            }
+        }
+    }
+}
+
+// For screen wider than 1960
+
+@media only screen and (min-width: 1960px) {
+    .features {
+        .container {
+            padding: 200px 10% 50px 10%;
+            .left-column {
+                width: 300px;
+                margin-bottom: 250px;
+            }
+            .container-bg {
+                margin-top: 0;
+
+                .circle {
+                    position: absolute;
+                    margin-left: 30px;
+                    width: 600px;
+                    height: 600px;
+                    background: rgba(212, 212, 212, 0.25);
+                    border-radius: 50%;
+                    z-index: -99;
+                }
+                .hook {
+                    left: 21.5%;
+                    bottom: 20px;
+                }
+            }
+
+            .right-column {
+                width: 250px;
+                padding-bottom: 100px;
+            }
+        }
+    }
+}
+
+// For screen wider than 2560px
+
+@media only screen and (min-width: 2560px) {
+    .features {
+        .container {
+            padding: 50px 10%;
+
+            .left-column {
+                width: 400px;
+                margin-bottom: 350px;
+                padding-left: 100px;
+            }
+
+            .container-bg {
+                width: 30%;
+
+                .circle {
+                    width: 650px;
+                    height: 650px;
+                    margin-left: 30px;
+                }
+                .hook {
+                    left: 20.5%;
+                    bottom: 20px;
+                }
+            }
+            .right-column {
+                width: 250px;
+                padding-bottom: 100px;
+            }
+        }
+    }
+}
