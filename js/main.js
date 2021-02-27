@@ -83,6 +83,7 @@ function render() {
         .appendChild(renderer.domElement);
 
     controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableZoom = false;
     controls.enablePan = false;
     controls.enableDamping = true;
     controls.maxPolarAngle = 1.35;
