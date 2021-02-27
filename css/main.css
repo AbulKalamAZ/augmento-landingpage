@@ -198,6 +198,15 @@
   width: 50%;
 }
 
+.hero .container .right-column canvas {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.hero .container .right-column canvas:focus {
+  outline: none;
+}
+
 .hero .container .right-column img {
   position: absolute;
   right: -80px;
@@ -250,6 +259,16 @@
 @media only screen and (min-width: 2560px) {
   .hero .container .left-column {
     padding: 45px 150px 45px 0;
+  }
+  .hero .container .right-column {
+    position: relative;
+  }
+  .hero .container .right-column canvas {
+    position: absolute;
+    top: -300px;
+    right: 60px;
+    width: 1440px;
+    height: 872px;
   }
   .hero .container .right-column img {
     position: absolute;
