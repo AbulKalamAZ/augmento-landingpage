@@ -16,8 +16,7 @@ let scene,
     pointLight2,
     pointLight1Helper,
     pointLight2Helper,
-    axesHelper,
-    rendererContainer;
+    axesHelper;
 
 function render() {
     scene = new THREE.Scene();
@@ -93,27 +92,7 @@ function render() {
 function animate() {
     renderer.render(scene, camera);
 
-    // spotLight.position.set(
-    //     camera.position.x + 10,
-    //     camera.position.y + 10,
-    //     camera.position.z + 10
-    // );
-
-    // spotLight2.position.set(
-    //     camera.position.x + 10,
-    //     camera.position.y + 10,
-    //     camera.position.z + 10
-    // );
-
     requestAnimationFrame(animate);
 }
 
-function resizedWindow() {}
-
 render();
-
-rendererContainer = document.querySelector('#renderer-container');
-
-rendererContainer.addEventListener('pointerdown', () => {
-    console.log('Clicked!');
-});
