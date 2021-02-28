@@ -8,7 +8,10 @@ let scene,
     camera,
     renderer,
     controls,
-    loader,
+    PedestalLoader,
+    artLoader,
+    monalisaLoader,
+    chairLoader,
     spotLight,
     spotLight2,
     hemisphereLight,
@@ -18,7 +21,11 @@ let scene,
     pointLight2Helper,
     axesHelper;
 
+const siteLoader = document.querySelector('.site-loader');
+
 function render() {
+    // INITIATING CONSTRUCTOR
+
     scene = new THREE.Scene();
     camera = new THREE.PerspectiveCamera(
         60,
@@ -34,12 +41,14 @@ function render() {
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(window.innerWidth * 0.5, window.innerHeight * 0.7);
 
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 0.7;
+    renderer.toneMapping = THREE.ReinhardToneMapping;
+    renderer.toneMappingExposure = 0.5;
 
     document
         .querySelector('#renderer-container')
         .appendChild(renderer.domElement);
+
+    // CONTROLS
 
     controls = new OrbitControls(camera, renderer.domElement);
 
@@ -52,20 +61,62 @@ function render() {
     camera.position.set(0, 20, 100);
     controls.update();
 
-    loader = new FBXLoader();
+    // LOADER
 
-    loader.load('../files/PEDESTRAL-2-WEB.fbx', (fbx) => {
+    PedestalLoader = new FBXLoader();
+
+    PedestalLoader.load('../files/PEDESTRAL-2-WEB.fbx', (fbx) => {
         fbx.scale.multiplyScalar(0.31);
         fbx.rotation.x = -Math.PI / 2;
         fbx.position.set(0, 0, 0);
         scene.add(fbx);
     });
 
+    artLoader = new FBXLoader();
+
+    artLoader.load('../files/ART-WEB.fbx', (fbx) => {
+        fbx.scale.multiplyScalar(0.3);
+        fbx.rotation.x = -Math.PI / 2;
+        fbx.position.set(85, 0, -25);
+        scene.add(fbx);
+    });
+
+    monalisaLoader = new FBXLoader();
+
+    monalisaLoader.load('../files/MONA-LISA-WEB.fbx', (fbx) => {
+        fbx.scale.multiplyScalar(0.3);
+        fbx.rotation.x = -Math.PI / 2;
+        fbx.rotation.z = -Math.PI / 2;
+        fbx.position.set(-100, -10, 0);
+        scene.add(fbx);
+    });
+
+    chairLoader = new FBXLoader();
+
+    chairLoader.load(
+        '../files/LOUNGE-CHAIR-WEB.fbx',
+        (fbx) => {
+            fbx.scale.multiplyScalar(0.3);
+            fbx.rotation.x = -Math.PI / 2;
+            fbx.position.set(5, 1, 5);
+            scene.add(fbx);
+        },
+        (xhr) => {
+            if ((xhr.loaded / xhr.total) * 100 === 100) {
+                siteLoader.style.opacity = 0;
+                siteLoader.style.display = 'none';
+            }
+        }
+    );
+
+    // LIGHTS
+
     hemisphereLight = new THREE.HemisphereLight(0x292929, 0xffffff, 4);
     scene.add(hemisphereLight);
 
     spotLight = new THREE.SpotLight(0xd1c7be, 4);
     spotLight.position.set(50, 25, 50);
+    spotLight.castShadow = true;
     scene.add(spotLight);
 
     spotLight2 = new THREE.SpotLight(0xd1c7be, 4);
@@ -79,12 +130,26 @@ function render() {
     // scene.add(spotLight2Helper);
 
     pointLight1 = new THREE.PointLight(0x808080, 2);
-    pointLight1.position.set(0, 0, 50);
+    pointLight1.position.set(0, 50, 100);
     scene.add(pointLight1);
 
+    // const pointLight1SphereSize = 5;
+    // const pointLight1Helper = new THREE.PointLightHelper(
+    //     pointLight1,
+    //     pointLight1SphereSize
+    // );
+    // scene.add(pointLight1Helper);
+
     pointLight2 = new THREE.PointLight(0x808080, 2);
-    pointLight2.position.set(0, 0, -50);
+    pointLight2.position.set(0, 50, -100);
     scene.add(pointLight2);
+
+    // const pointLight2SphereSize = 5;
+    // const pointLight2Helper = new THREE.PointLightHelper(
+    //     pointLight2,
+    //     pointLight2SphereSize
+    // );
+    // scene.add(pointLight2Helper);
 
     animate();
 }
