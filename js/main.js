@@ -104,8 +104,8 @@ function render() {
         (xhr) => {
             if ((xhr.loaded / xhr.total) * 100 === 100) {
                 console.log('done');
-                siteLoader.style.opacity = 0;
-                siteLoader.style.display = 'none';
+                // siteLoader.style.opacity = 0;
+                // siteLoader.style.display = 'none';
             }
         }
     );
