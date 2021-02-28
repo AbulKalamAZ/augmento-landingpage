@@ -1,47 +1,3 @@
-// // Variables
-
-// const fov = 60;
-// let aspectRatio;
-// const nearPoint = 1.0;
-// const farPoint = 1000.0;
-
-// if (window.innerWidth >= 1440) {
-//     aspectRatio = 745 / 425;
-// } else if (window.innerWidth >= 1960) {
-//     aspectRatio = 900 / 510;
-// } else if (window.innerWidth >= 2560) {
-//     aspectRatio = 1175 / 670;
-// }
-
-// const scene = new THREE.Scene();
-// const camera = new THREE.PerspectiveCamera(
-//     fov,
-//     aspectRatio,
-//     nearPoint,
-//     farPoint
-// );
-// const renderer = new THREE.WebGLRenderer({ antialias: false });
-
-// // Renderer setting
-
-// renderer.setPixelRatio(window.devicePixelRation);
-// // if (window.innerWidth >= 1440) {
-// //     renderer.setSize(745, 425);
-// // } else if (window.innerWidth >= 1960) {
-// //     renderer.setSize(900, 510);
-// // } else if (window.innerWidth >= 2560) {
-// //     renderer.setSize(1175, 670);
-// // }
-
-// // Adding renderer into the DOM
-
-// document.querySelector('#renderer-container').appendChild(renderer.domElement);
-// console.log(renderer.getSize());
-
-// // Camera setting
-
-// camera.position.set(0, 15, 50);
-
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.118/build/three.module.js';
 
 // import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.118.1/examples/jsm/loaders/GLTFLoader.js';
@@ -151,6 +107,8 @@ function animate() {
 
     requestAnimationFrame(animate);
 }
+
+function resizedWindow() {}
 
 render();
 

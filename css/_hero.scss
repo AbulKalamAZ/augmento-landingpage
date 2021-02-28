@@ -75,6 +75,9 @@
             width: 50%;
 
             canvas {
+                position: absolute;
+                top: -200px;
+                right: 10px;
                 cursor: grab;
 
                 &:focus {
@@ -125,10 +128,13 @@
             }
 
             .right-column {
-                // canvas {
-                //     width: 900px;
-                //     height: 510px;
-                // }
+                position: relative;
+
+                canvas {
+                    position: absolute;
+                    top: -300px;
+                    right: 30px;
+                }
                 img {
                     position: absolute;
                     right: 0px;
@@ -160,7 +166,7 @@
                 position: relative;
                 canvas {
                     position: absolute;
-                    top: -300px;
+                    top: -325px;
                     right: 60px;
                     width: 1440px;
                     height: 872px;
