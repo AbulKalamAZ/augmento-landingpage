@@ -1,0 +1,46 @@
+.pricing-table {
+    width: 100%;
+
+    .container {
+        width: 100%;
+        padding: 100px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .section-header {
+            width: 55%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .icons {
+                width: 45%;
+                margin-bottom: 40px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .title {
+                margin-bottom: 35px;
+                font-family: 'Eina02-Bold';
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 52px;
+                color: $pricing-section-title-color;
+            }
+
+            .sub-title {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 22px;
+                font-weight: 500;
+                line-height: 32px;
+                color: $pricing-section-subtitle-color;
+            }
+        }
+    }
+}
