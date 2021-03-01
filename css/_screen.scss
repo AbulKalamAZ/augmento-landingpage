@@ -75,3 +75,67 @@
         }
     }
 }
+
+// For screen wider than 1960px
+
+@media only screen and(min-width: 1960px) {
+    .screen {
+        .container {
+            width: 100%;
+            padding: 150px 10% 0 10%;
+
+            .section-title {
+                width: 40%;
+            }
+
+            .code-editor {
+                width: 1030px;
+                height: 480px;
+
+                .screen-header {
+                    width: 100%;
+                    height: 45px;
+                }
+
+                .editor-screen {
+                    width: 100%;
+                    height: 435px;
+                }
+            }
+        }
+    }
+}
+
+// For screen wider than 2560px
+
+@media only screen and(min-width: 2560px) {
+    .screen {
+        .container {
+            width: 100%;
+            padding: 150px 10% 0 10%;
+
+            .section-title {
+                width: 30%;
+
+                .title {
+                    margin-bottom: 30px;
+                }
+            }
+
+            .code-editor {
+                width: 1070px;
+                height: 500px;
+
+                .screen-header {
+                    width: 100%;
+                    height: 50px;
+                }
+
+                .editor-screen {
+                    width: 100%;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
