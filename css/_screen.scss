@@ -1,0 +1,77 @@
+.screen {
+    width: 100%;
+    background: $screen-section-background-color;
+
+    .container {
+        width: 100%;
+        padding: 100px 80px 0 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .section-title {
+            width: 51%;
+            margin-bottom: 55px;
+            text-align: center;
+
+            .title {
+                margin-bottom: 25px;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 52px;
+                color: $screen-section-title-color;
+            }
+
+            .sub-title {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+                color: $screen-section-title-color;
+            }
+        }
+
+        .code-editor {
+            min-width: 968px;
+            height: 450px;
+            pointer-events: none;
+
+            .screen-header {
+                width: 100%;
+                height: 40px;
+                padding: 13px;
+                background: $screen-code-editor-header-color;
+                border-top-right-radius: 10px;
+                border-top-left-radius: 10px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                div {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
+
+                .red {
+                    background: rgba(249, 100, 100, 1);
+                }
+                .yellow {
+                    background: rgba(242, 201, 96, 1);
+                }
+                .green {
+                    background: rgba(16, 208, 122, 1);
+                }
+            }
+
+            .editor-screen {
+                width: 100%;
+                height: 410px;
+                background: $screen-code-editor-background-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,120 @@
+.case-studies {
+    width: 100%;
+
+    .container {
+        width: 100%;
+        padding: 100px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .section-title {
+            width: 60%;
+            margin-bottom: 80px;
+            text-align: center;
+
+            .title {
+                font-family: 'Eina02-Bold';
+                font-size: 42px;
+                font-weight: 700;
+                line-height: 52px;
+                letter-spacing: 1px;
+                color: $case-studies-title-color;
+                margin-bottom: 20px;
+            }
+
+            .sub-title {
+                font-family: 'Eina02-Regular';
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 32px;
+                color: $case-studies-subtitle-color;
+            }
+        }
+
+        .cases {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .case {
+                margin: 0 15px;
+                cursor: pointer;
+
+                .case-img {
+                    margin-bottom: 20px;
+                }
+
+                .description {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .title {
+                        margin-bottom: 14px;
+                        font-family: 'Eina02-SemiBold';
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 32px;
+                        color: $case-title-color;
+                    }
+
+                    .sub-title {
+                        font-family: 'Eina02-Bold';
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        color: $case-subtitle-color;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// For screen wider than 1960px
+
+@media only screen and (min-width: 1960px) {
+    .case-studies {
+        .container {
+            width: 100%;
+            padding: 200px 10%;
+
+            .section-title {
+                width: 50%;
+            }
+
+            .cases {
+                .case {
+                    margin: 0 30px;
+                }
+            }
+        }
+    }
+}
+
+// For screen wider than 2560px
+
+@media only screen and (min-width: 2560px) {
+    .case-studies {
+        .container {
+            width: 100%;
+            padding: 200px 10%;
+
+            .section-title {
+                width: 40%;
+            }
+
+            .cases {
+                .case {
+                    margin: 0 35px;
+                }
+            }
+        }
+    }
+}

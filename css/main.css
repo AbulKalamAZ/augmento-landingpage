@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 @font-face {
   font-family: Eina02-Light;
   src: url("../fonts/Eina02-Light.woff") format("woff"), url("../fonts/Eina02-Light.ttf") format("truetype");
@@ -450,6 +451,233 @@
     width: 250px;
     padding-bottom: 100px;
   }
+}
+
+.case-studies {
+  width: 100%;
+}
+
+.case-studies .container {
+  width: 100%;
+  padding: 100px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case-studies .container .section-title {
+  width: 60%;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.case-studies .container .section-title .title {
+  font-family: 'Eina02-Bold';
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 1px;
+  color: #343940;
+  margin-bottom: 20px;
+}
+
+.case-studies .container .section-title .sub-title {
+  font-family: 'Eina02-Regular';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32px;
+  color: rgba(21, 20, 57, 0.4);
+}
+
+.case-studies .container .cases {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case-studies .container .cases .case {
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.case-studies .container .cases .case .case-img {
+  margin-bottom: 20px;
+}
+
+.case-studies .container .cases .case .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case-studies .container .cases .case .description .title {
+  margin-bottom: 14px;
+  font-family: 'Eina02-SemiBold';
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #20b2e5;
+}
+
+.case-studies .container .cases .case .description .sub-title {
+  font-family: 'Eina02-Bold';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  color: rgba(21, 20, 57, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media only screen and (min-width: 1960px) {
+  .case-studies .container {
+    width: 100%;
+    padding: 200px 10%;
+  }
+  .case-studies .container .section-title {
+    width: 50%;
+  }
+  .case-studies .container .cases .case {
+    margin: 0 30px;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .case-studies .container {
+    width: 100%;
+    padding: 200px 10%;
+  }
+  .case-studies .container .section-title {
+    width: 40%;
+  }
+  .case-studies .container .cases .case {
+    margin: 0 35px;
+  }
+}
+
+.screen {
+  width: 100%;
+  background: #343940;
+}
+
+.screen .container {
+  width: 100%;
+  padding: 100px 80px 0 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.screen .container .section-title {
+  width: 51%;
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.screen .container .section-title .title {
+  margin-bottom: 25px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 52px;
+  color: white;
+}
+
+.screen .container .section-title .sub-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: white;
+}
+
+.screen .container .code-editor {
+  min-width: 968px;
+  height: 450px;
+  pointer-events: none;
+}
+
+.screen .container .code-editor .screen-header {
+  width: 100%;
+  height: 40px;
+  padding: 13px;
+  background: #171c23;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.screen .container .code-editor .screen-header div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.screen .container .code-editor .screen-header .red {
+  background: #f96464;
+}
+
+.screen .container .code-editor .screen-header .yellow {
+  background: #f2c960;
+}
+
+.screen .container .code-editor .screen-header .green {
+  background: #10d07a;
+}
+
+.screen .container .code-editor .editor-screen {
+  width: 100%;
+  height: 410px;
+  background: #c4c4c4;
 }
 
 * {
