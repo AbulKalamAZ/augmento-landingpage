@@ -44,3 +44,33 @@
         }
     }
 }
+
+// For scrren wider than 1960px
+
+@media only screen and (min-width: 1960px) {
+    .pricing-table {
+        .container {
+            width: 100%;
+            padding: 150px 10%;
+
+            .section-header {
+                width: 40%;
+            }
+        }
+    }
+}
+
+// For scrren wider than 2560px
+
+@media only screen and (min-width: 2560px) {
+    .pricing-table {
+        .container {
+            width: 100%;
+            padding: 150px 10%;
+
+            .section-header {
+                width: 35%;
+            }
+        }
+    }
+}

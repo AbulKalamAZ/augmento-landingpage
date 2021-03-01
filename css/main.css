@@ -797,6 +797,26 @@
   color: rgba(21, 20, 57, 0.4);
 }
 
+@media only screen and (min-width: 1960px) {
+  .pricing-table .container {
+    width: 100%;
+    padding: 150px 10%;
+  }
+  .pricing-table .container .section-header {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .pricing-table .container {
+    width: 100%;
+    padding: 150px 10%;
+  }
+  .pricing-table .container .section-header {
+    width: 35%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
