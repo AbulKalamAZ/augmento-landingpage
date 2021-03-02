@@ -751,6 +751,7 @@
 
 .pricing-table .container .section-header {
   width: 55%;
+  margin-bottom: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -795,6 +796,140 @@
   font-weight: 500;
   line-height: 32px;
   color: rgba(21, 20, 57, 0.4);
+}
+
+.pricing-table .container .table {
+  min-width: 1200px;
+  height: 480px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  background: #ffffff;
+  border: 0.5px solid #c7c7c7;
+  border-radius: 26px;
+  -webkit-box-shadow: 0 4 40 rgba(0, 0, 0, 0.03);
+          box-shadow: 0 4 40 rgba(0, 0, 0, 0.03);
+}
+
+.pricing-table .container .table .plan {
+  padding: 40px 30px 40px 40px;
+  cursor: pointer;
+}
+
+.pricing-table .container .table .plan .plan-price {
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pricing-table .container .table .plan .plan-price h3 {
+  font-family: 'Eina02-Bold';
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  color: #231d4f;
+  text-transform: uppercase;
+}
+
+.pricing-table .container .table .plan .plan-price p {
+  margin: 17px 0 0 15px;
+  font-family: 'Eina02-Regular';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #848199;
+}
+
+.pricing-table .container .table .plan .plan-title {
+  margin-bottom: 20px;
+}
+
+.pricing-table .container .table .plan .plan-title .plan-name {
+  margin-bottom: 10px;
+  font-family: 'Eina02-SemiBold';
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 39px;
+  color: #231d4f;
+}
+
+.pricing-table .container .table .plan .plan-title .plan-for-whom {
+  font-family: 'Eina02-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #848199;
+}
+
+.pricing-table .container .table .plan .advantage-list {
+  list-style: none;
+  padding-left: 25px;
+  margin-left: 16px;
+  margin-bottom: 25px;
+  font-family: 'Eina02-Regular';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #848199;
+}
+
+.pricing-table .container .table .plan .advantage-list .advantages {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.pricing-table .container .table .plan .advantage-list .advantages::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -28px;
+  width: 22px;
+  height: 20px;
+  background: url(../images/check-circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pricing-table .container .table .plan .advantage-list .disadvantages {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.pricing-table .container .table .plan .advantage-list .disadvantages::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -28px;
+  width: 22px;
+  height: 20px;
+  background: url(../images/circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pricing-table .container .table .plan .get-plan-button {
+  width: 210px;
+  height: 45px;
+  margin-top: 10px;
+  border: none;
+  outline: 0;
+  border-radius: 24px;
+  background: rgba(151, 151, 151, 0.1);
+  font-family: 'Eina02-SemiBold';
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 1960px) {

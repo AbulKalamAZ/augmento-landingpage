@@ -11,6 +11,7 @@
 
         .section-header {
             width: 55%;
+            margin-bottom: 170px;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -40,6 +41,131 @@
                 font-weight: 500;
                 line-height: 32px;
                 color: $pricing-section-subtitle-color;
+            }
+        }
+
+        .table {
+            min-width: 1200px;
+            height: 480px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            background: #ffffff;
+            border: 0.5px solid #c7c7c7;
+            border-radius: 26px;
+            box-shadow: 0 4 40 rgba(0, 0, 0, 0.03);
+
+            .plan {
+                padding: 40px 30px 40px 40px;
+                cursor: pointer;
+
+                .plan-price {
+                    margin-bottom: 20px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    h3 {
+                        font-family: 'Eina02-Bold';
+                        font-size: 36px;
+                        font-weight: 700;
+                        line-height: 46px;
+                        color: $pricing-plan-price-color;
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        margin: 17px 0 0 15px;
+                        font-family: 'Eina02-Regular';
+                        font-size: 17px;
+                        font-weight: 400;
+                        line-height: 23px;
+                        color: $pricing-plan-duration-color;
+                    }
+                }
+
+                .plan-title {
+                    margin-bottom: 20px;
+
+                    .plan-name {
+                        margin-bottom: 10px;
+                        font-family: 'Eina02-SemiBold';
+                        font-size: 28px;
+                        font-weight: 600;
+                        line-height: 39px;
+                        color: $pricing-plan-price-color;
+                    }
+
+                    .plan-for-whom {
+                        font-family: 'Eina02-Regular';
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        color: $pricing-plan-duration-color;
+                    }
+                }
+
+                .advantage-list {
+                    list-style: none;
+                    padding-left: 25px;
+                    margin-left: 16px;
+                    margin-bottom: 25px;
+                    font-family: 'Eina02-Regular';
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    color: $pricing-plan-duration-color;
+
+                    .advantages {
+                        position: relative;
+                        margin-bottom: 10px;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 2px;
+                            left: -28px;
+                            width: 22px;
+                            height: 20px;
+                            background: url(../images/check-circle.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+
+                    .disadvantages {
+                        position: relative;
+                        margin-bottom: 10px;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 2px;
+                            left: -28px;
+                            width: 22px;
+                            height: 20px;
+                            background: url(../images/circle.png);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+
+                .get-plan-button {
+                    width: 210px;
+                    height: 45px;
+                    margin-top: 10px;
+                    border: none;
+                    outline: 0;
+                    border-radius: 24px;
+                    background: $get-plan-button-background-color;
+                    font-family: 'Eina02-SemiBold';
+                    font-size: 15px;
+                    font-weight: 600;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #000000;
+                    cursor: pointer;
+                }
             }
         }
     }
