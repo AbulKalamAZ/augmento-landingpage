@@ -898,6 +898,10 @@
   background-position: center;
 }
 
+.pricing-table .container .table .plan .advantage-list .advantages .bold-text {
+  font-weight: 700;
+}
+
 .pricing-table .container .table .plan .advantage-list .disadvantages {
   position: relative;
   margin-bottom: 10px;
