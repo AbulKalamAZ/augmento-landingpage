@@ -815,6 +815,10 @@
 .pricing-table .container .table .plan {
   padding: 40px 30px 40px 40px;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 450ms ease-out;
+  transition: -webkit-transform 450ms ease-out;
+  transition: transform 450ms ease-out;
+  transition: transform 450ms ease-out, -webkit-transform 450ms ease-out;
 }
 
 .pricing-table .container .table .plan .plan-price {
@@ -873,7 +877,7 @@
   list-style: none;
   padding-left: 25px;
   margin-left: 16px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   font-family: 'Eina02-Regular';
   font-size: 15px;
   font-weight: 400;
@@ -893,9 +897,23 @@
   left: -28px;
   width: 22px;
   height: 20px;
-  background: url(../images/check-circle.png);
+  background: url(../images/green-check.png);
   background-repeat: no-repeat;
   background-position: center;
+  border-radius: 50%;
+}
+
+.pricing-table .container .table .plan .advantage-list .advantages::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -27.5px;
+  width: 22px;
+  height: 20px;
+  background: url(../images/faded-circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
 }
 
 .pricing-table .container .table .plan .advantage-list .advantages .bold-text {
@@ -914,7 +932,19 @@
   left: -28px;
   width: 22px;
   height: 20px;
-  background: url(../images/circle.png);
+  background: url(../images/red-cross.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.pricing-table .container .table .plan .advantage-list .disadvantages::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -28px;
+  width: 22px;
+  height: 20px;
+  background: url(../images/faded-circle.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -922,7 +952,7 @@
 .pricing-table .container .table .plan .get-plan-button {
   width: 210px;
   height: 45px;
-  margin-top: 10px;
+  margin: 0 auto;
   border: none;
   outline: 0;
   border-radius: 24px;
@@ -934,6 +964,128 @@
   text-align: center;
   color: #000000;
   cursor: pointer;
+}
+
+.pricing-table .container .table .plan:hover {
+  position: relative;
+  background: linear-gradient(69.28deg, #009dff 18.5%, #68008c 136.36%);
+  border-radius: 26px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  -webkit-box-shadow: 0px 22px 36px 0px rgba(91, 164, 254, 0.33);
+          box-shadow: 0px 22px 36px 0px rgba(91, 164, 254, 0.33);
+}
+
+.pricing-table .container .table .plan:hover .plan-price h3 {
+  color: #ffffff;
+}
+
+.pricing-table .container .table .plan:hover .plan-price p {
+  color: #ffffff;
+}
+
+.pricing-table .container .table .plan:hover .plan-title .plan-name {
+  color: #ffffff;
+}
+
+.pricing-table .container .table .plan:hover .plan-title .plan-for-whom {
+  color: #ffffff;
+}
+
+.pricing-table .container .table .plan:hover .advantage-list {
+  color: #ffffff;
+}
+
+.pricing-table .container .table .plan:hover .advantage-list li::before {
+  z-index: 1;
+}
+
+.pricing-table .container .table .plan:hover .advantage-list li::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -27.5px;
+  width: 22px;
+  height: 20px;
+  background: url(../images/circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.pricing-table .container .table .plan:hover .get-plan-button {
+  background: #ffffff;
+}
+
+.pricing-table .container .table .most-popular {
+  position: relative;
+  padding: 50px 30px 40px 40px;
+  background: linear-gradient(69.28deg, #009dff 18.5%, #68008c 136.36%);
+  border-radius: 26px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  -webkit-box-shadow: 0px 22px 36px 0px rgba(91, 164, 254, 0.33);
+          box-shadow: 0px 22px 36px 0px rgba(91, 164, 254, 0.33);
+}
+
+.pricing-table .container .table .most-popular .plan-price h3 {
+  color: #ffffff;
+}
+
+.pricing-table .container .table .most-popular .plan-price p {
+  color: #ffffff;
+}
+
+.pricing-table .container .table .most-popular .plan-title .plan-name {
+  color: #ffffff;
+}
+
+.pricing-table .container .table .most-popular .plan-title .plan-for-whom {
+  color: #ffffff;
+}
+
+.pricing-table .container .table .most-popular .advantage-list {
+  color: #ffffff;
+}
+
+.pricing-table .container .table .most-popular .advantage-list .advantages::before {
+  z-index: 1;
+}
+
+.pricing-table .container .table .most-popular .advantage-list .advantages::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: -27.5px;
+  width: 22px;
+  height: 20px;
+  background: url(../images/circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.pricing-table .container .table .most-popular .get-plan-button {
+  background: #ffffff;
+}
+
+.pricing-table .container .table .most-popular::before {
+  content: 'most popular';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 120px;
+  height: 15px;
+  padding: 7px 15px;
+  background: #019eff;
+  font-family: 'Eina02-Bold';
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 13px;
 }
 
 @media only screen and (min-width: 1960px) {
