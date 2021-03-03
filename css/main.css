@@ -800,6 +800,7 @@
 
 .pricing-table .container .table {
   min-width: 1200px;
+  max-width: 1300px;
   height: 480px;
   display: -ms-grid;
   display: grid;
@@ -813,6 +814,7 @@
 }
 
 .pricing-table .container .table .plan {
+  height: 100%;
   padding: 40px 30px 40px 40px;
   cursor: pointer;
   -webkit-transition: -webkit-transform 450ms ease-out;
@@ -950,7 +952,7 @@
 }
 
 .pricing-table .container .table .plan .get-plan-button {
-  width: 210px;
+  width: 96%;
   height: 45px;
   margin: 0 auto;
   border: none;
@@ -1105,6 +1107,19 @@
   }
   .pricing-table .container .section-header {
     width: 35%;
+  }
+  .pricing-table .container .table {
+    height: 580px;
+  }
+  .pricing-table .container .table .plan {
+    padding: 40px;
+  }
+  .pricing-table .container .table .plan .plan-price {
+    margin-bottom: 30px;
+  }
+  .pricing-table .container .table .plan .advantage-list {
+    margin-bottom: 60px;
+    margin-top: 50px;
   }
 }
 

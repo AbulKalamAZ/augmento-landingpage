@@ -46,6 +46,7 @@
 
         .table {
             min-width: 1200px;
+            max-width: 1300px;
             height: 480px;
             display: grid;
             grid-template-columns: auto auto auto auto;
@@ -55,6 +56,7 @@
             box-shadow: 0 4 40 rgba(0, 0, 0, 0.03);
 
             .plan {
+                height: 100%;
                 padding: 40px 30px 40px 40px;
                 cursor: pointer;
                 transition: transform 450ms ease-out;
@@ -180,7 +182,7 @@
                 }
 
                 .get-plan-button {
-                    width: 210px;
+                    width: 96%;
                     height: 45px;
                     margin: 0 auto;
                     border: none;
@@ -357,6 +359,23 @@
 
             .section-header {
                 width: 35%;
+            }
+
+            .table {
+                height: 580px;
+
+                .plan {
+                    padding: 40px;
+
+                    .plan-price {
+                        margin-bottom: 30px;
+                    }
+
+                    .advantage-list {
+                        margin-bottom: 60px;
+                        margin-top: 50px;
+                    }
+                }
             }
         }
     }
