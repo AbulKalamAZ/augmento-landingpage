@@ -1,0 +1,46 @@
+.footer {
+    width: 100%;
+    padding: 50px 80px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .copyright-message {
+        font-family: 'Eina02-SemiBold';
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 45px;
+        color: #000000;
+
+        a {
+            color: #000000;
+        }
+    }
+
+    .socials {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+
+        div {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+    }
+}
+
+// For wider screen than 1960px
+
+@media only screen and (min-width: 1960px) {
+    .footer {
+        width: 74%;
+        margin: 0 auto;
+    }
+}
+
+// For wider screen than 2560px
+
+@media only screen and (min-width: 2560px) {
+    .footer {
+        width: 57%;
+    }
+}

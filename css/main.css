@@ -972,8 +972,8 @@
   position: relative;
   background: linear-gradient(69.28deg, #009dff 18.5%, #68008c 136.36%);
   border-radius: 26px;
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
   -webkit-box-shadow: 0px 22px 36px 0px rgba(91, 164, 254, 0.33);
           box-shadow: 0px 22px 36px 0px rgba(91, 164, 254, 0.33);
 }
@@ -1024,8 +1024,8 @@
   padding: 50px 30px 40px 40px;
   background: linear-gradient(69.28deg, #009dff 18.5%, #68008c 136.36%);
   border-radius: 26px;
-  -webkit-transform: translateY(-40px);
-          transform: translateY(-40px);
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
   -webkit-box-shadow: 0px 22px 36px 0px rgba(91, 164, 254, 0.33);
           box-shadow: 0px 22px 36px 0px rgba(91, 164, 254, 0.33);
 }
@@ -1120,6 +1120,59 @@
   .pricing-table .container .table .plan .advantage-list {
     margin-bottom: 60px;
     margin-top: 50px;
+  }
+}
+
+.footer {
+  width: 100%;
+  padding: 50px 80px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.footer .copyright-message {
+  font-family: 'Eina02-SemiBold';
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 45px;
+  color: #000000;
+}
+
+.footer .copyright-message a {
+  color: #000000;
+}
+
+.footer .socials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+.footer .socials div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (min-width: 1960px) {
+  .footer {
+    width: 74%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .footer {
+    width: 57%;
   }
 }
 
