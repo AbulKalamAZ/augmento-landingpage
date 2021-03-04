@@ -77,6 +77,14 @@
     }
 }
 
+// For features smaller than 425px
+
+@media only screen and (max-width: 425px) {
+    .case-studies {
+        display: none;
+    }
+}
+
 // For screen wider than 1960px
 
 @media only screen and (min-width: 1960px) {

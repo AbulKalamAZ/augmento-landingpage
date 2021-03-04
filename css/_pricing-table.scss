@@ -334,6 +334,14 @@
     }
 }
 
+// For features smaller than 425px
+
+@media only screen and (max-width: 425px) {
+    .pricing-table {
+        display: none;
+    }
+}
+
 // For scrren wider than 1960px
 
 @media only screen and (min-width: 1960px) {

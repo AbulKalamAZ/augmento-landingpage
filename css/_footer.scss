@@ -28,6 +28,46 @@
     }
 }
 
+// For screen smaller than 425px
+
+@media only screen and (max-width: 425px) {
+    .footer {
+        width: 100%;
+        padding: 30px 24px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+        .copyright-message {
+            width: 100%;
+            font-family: 'Eina02-SemiBold';
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 42px;
+            text-align: center;
+            color: #000000;
+
+            a {
+                color: #000000;
+            }
+        }
+
+        .socials {
+            width: 100%;
+            margin-bottom: 32px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
 // For wider screen than 1960px
 
 @media only screen and (min-width: 1960px) {

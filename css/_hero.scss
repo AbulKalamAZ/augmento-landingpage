@@ -103,6 +103,99 @@
     }
 }
 
+// For screen smaller than 425px
+
+@media only screen and (max-width: 425px) {
+    .hero {
+        width: 100%;
+        height: 65%;
+
+        .container {
+            width: 100%;
+            padding: 0 24px;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: -1;
+                width: 50%;
+                height: 60vh;
+                background: $header_gradient_background;
+                border-bottom-left-radius: 190px;
+                z-index: -9;
+            }
+
+            .left-column {
+                width: 100%;
+                padding: 16px 0;
+                color: $header-title-color;
+
+                .hero-title {
+                    margin: 0;
+                    font-family: 'Eina02-SemiBold';
+                    font-size: 25px;
+                    font-weight: 600;
+                    line-height: 36px;
+                }
+
+                .hero-subtitle {
+                    margin-top: 0px;
+                    font-family: 'Eina02-Light';
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+
+                .hero-cta {
+                    margin-top: 24px;
+                    padding: 5px 55px;
+                    font-family: 'Eina02-Light';
+                    font-size: 18px;
+                    line-height: 36px;
+                    outline: none;
+                    border: 0;
+                    border-radius: 18px;
+                    background: linear-gradient(
+                        268.25deg,
+                        #ff8946 6.75%,
+                        #f96464 98.78%
+                    );
+                    color: #ffffff;
+                    cursor: pointer;
+                }
+
+                .get-app {
+                    margin-top: 24px;
+                    padding: 0 2px;
+                }
+            }
+
+            .right-column {
+                width: 100%;
+                height: 50vh;
+            }
+        }
+        .background-arrow {
+            width: 250px;
+            height: 500px;
+            position: absolute;
+            top: 330px;
+            left: -36px;
+            z-index: -99;
+
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
 // For screen wider than 1960px
 
 @media only screen and (min-width: 1960px) {
