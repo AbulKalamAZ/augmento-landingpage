@@ -447,7 +447,7 @@
     width: 250px;
     height: 500px;
     position: absolute;
-    top: 330px;
+    top: 300px;
     left: -36px;
     z-index: -99;
   }
@@ -629,7 +629,98 @@
 
 @media only screen and (max-width: 425px) {
   .features {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .features .container {
+    position: relative;
+    width: 100%;
+    padding: 0 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features .container .left-column {
+    position: absolute;
+    top: 200px;
+    left: 85px;
+    margin: 0;
+  }
+  .features .container .left-column .feature-title {
+    font-family: 'Eina02-Bold';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: left;
+    color: #343438;
+  }
+  .features .container .left-column .feature-subtitle {
+    margin-top: 10px;
+    font-family: 'Eina02-Regular';
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #151439;
+  }
+  .features .container .container-bg {
+    width: 100%;
+  }
+  .features .container .container-bg .circle {
     display: none;
+  }
+  .features .container .container-bg .iphone-clay {
+    width: 130%;
+    height: calc(width * 1.4);
+    z-index: -9;
+  }
+  .features .container .container-bg .iphone-clay svg {
+    width: 100%;
+    height: 100%;
+  }
+  .features .container .container-bg .hook {
+    position: absolute;
+    bottom: 135px;
+    left: -5%;
+    width: 60%;
+    height: 110px;
+  }
+  .features .container .container-bg .hook svg {
+    width: 100%;
+    height: 100%;
+  }
+  .features .container .right-column {
+    position: relative;
+    top: -20px;
+    width: 100%;
+  }
+  .features .container .right-column .feature {
+    margin-bottom: 30px;
+  }
+  .features .container .right-column .feature h3 {
+    font-family: 'Eina02-Bold';
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #343438;
+  }
+  .features .container .right-column .feature p {
+    margin-top: 10px;
+    font-family: 'Eina02-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: rgba(21, 20, 57, 0.8);
   }
 }
 
