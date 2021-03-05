@@ -107,7 +107,7 @@
   .header .navbar .logo {
     width: 150px;
     height: 40px;
-    z-index: 1;
+    z-index: 1001;
   }
   .header .navbar .logo .header-logo {
     width: 100%;
@@ -119,6 +119,7 @@
   }
   .header .navbar .mobile-menu {
     display: block;
+    z-index: 1001;
   }
   .header .navbar .mobile-menu input {
     display: block;
@@ -193,7 +194,6 @@
     background: #fafafa;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
     -webkit-transform-origin: 0% 0%;
             transform-origin: 0% 0%;
     -webkit-transform: translate(100%, 0);
@@ -202,6 +202,7 @@
     transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    z-index: 1000;
   }
   .header .navbar .nav-list li {
     position: relative;
