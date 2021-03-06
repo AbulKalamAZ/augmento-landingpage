@@ -68,9 +68,10 @@
         max-height: 70px;
         padding: 0;
         background: #fafafa;
-        overflow-y: hidden;
+        overflow: hidden;
 
         .navbar {
+            position: relative;
             padding: 24px;
 
             .logo {
