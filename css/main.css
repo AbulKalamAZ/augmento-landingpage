@@ -101,7 +101,6 @@
     height: 70px;
     padding: 0;
     background: #fafafa;
-    overflow-x: hidden;
   }
   .header .navbar {
     padding: 24px;
@@ -378,7 +377,8 @@
 @media only screen and (max-width: 425px) {
   .hero {
     width: 100%;
-    height: 65%;
+    height: 470px;
+    background: linear-gradient(94.85deg, #009dff 0%, #68008c 100%);
   }
   .hero .container {
     width: 100%;
@@ -387,9 +387,29 @@
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .container::after {
+    display: none;
+  }
+  .hero .container .left-column {
+    width: 90%;
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -397,68 +417,85 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .hero .container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -1;
-    width: 50%;
-    height: 60vh;
-    background: linear-gradient(94.85deg, #009dff 0%, #68008c 100%);
-    border-bottom-left-radius: 190px;
-    z-index: -9;
-  }
-  .hero .container .left-column {
-    width: 100%;
-    padding: 16px 0;
-    color: #343438;
-  }
   .hero .container .left-column .hero-title {
     margin: 0;
     font-family: 'Eina02-SemiBold';
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 600;
-    line-height: 36px;
+    line-height: 33px;
+    text-align: center;
+    color: #ffffff;
   }
   .hero .container .left-column .hero-subtitle {
-    margin-top: 0px;
-    font-family: 'Eina02-Light';
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28px;
+    display: none;
   }
   .hero .container .left-column .hero-cta {
-    margin-top: 24px;
-    padding: 5px 55px;
+    position: relative;
+    top: 215px;
+    width: 235px;
+    height: 40px;
+    padding: 5px 20px;
     font-family: 'Eina02-Light';
     font-size: 18px;
-    line-height: 36px;
+    line-height: 18px;
     outline: none;
     border: 0;
     border-radius: 18px;
-    background: linear-gradient(268.25deg, #ff8946 6.75%, #f96464 98.78%);
+    background: linear-gradient(268.25deg, #ff8946 6.75%, #f96464 100%, #f96464 100%);
     color: #ffffff;
     cursor: pointer;
   }
   .hero .container .left-column .get-app {
-    margin-top: 24px;
+    position: relative;
+    top: 210px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 16px;
     padding: 0 2px;
+  }
+  .hero .container .left-column .get-app a {
+    width: 70px;
+    height: 20px;
+  }
+  .hero .container .left-column .get-app a svg {
+    width: 100%;
   }
   .hero .container .right-column {
     width: 100%;
-    height: 50vh;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .container .right-column img {
+    position: relative;
+    top: -140px;
+    right: 0;
+    width: 114%;
+    height: auto;
   }
   .hero .background-arrow {
-    width: 250px;
-    height: 500px;
-    position: absolute;
-    top: 300px;
-    left: -36px;
-    z-index: -99;
+    display: none;
   }
-  .hero .background-arrow svg {
+}
+
+@media only screen and (max-width: 320px) {
+  .hero .container .left-column {
     width: 100%;
-    height: 100%;
   }
 }
 
@@ -543,6 +580,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.features .container .background-arrow {
+  display: none;
 }
 
 .features .container .left-column {
@@ -635,12 +676,11 @@
 @media only screen and (max-width: 425px) {
   .features {
     width: 100%;
-    overflow-x: hidden;
   }
   .features .container {
     position: relative;
     width: 100%;
-    padding: 0 24px;
+    padding: 60px 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -655,34 +695,53 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .features .container .background-arrow {
+    display: block;
+    width: 100%;
+    height: 375px;
+    position: static;
+  }
+  .features .container .background-arrow svg {
+    width: 150%;
+    height: 100%;
+    position: relative;
+    left: -14px;
+  }
   .features .container .left-column {
     position: absolute;
-    top: 200px;
-    left: 85px;
+    top: 140px;
+    left: 40px;
     margin: 0;
   }
   .features .container .left-column .feature-title {
     font-family: 'Eina02-Bold';
-    font-size: 32px;
+    font-size: 44px;
     font-weight: 700;
-    line-height: 42px;
+    line-height: 55px;
     text-align: left;
     color: #343438;
+    text-align: center;
   }
   .features .container .left-column .feature-subtitle {
-    margin-top: 10px;
+    margin-top: 20px;
     font-family: 'Eina02-Regular';
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
-    line-height: 16px;
-    text-align: left;
+    line-height: 17px;
+    text-align: center;
     color: #151439;
   }
   .features .container .container-bg {
-    width: 100%;
+    width: 90%;
+    height: 500px;
   }
   .features .container .container-bg .circle {
-    display: none;
+    position: absolute;
+    width: 115%;
+    height: 330px;
+    background: rgba(212, 212, 212, 0.25);
+    border-radius: 50%;
+    z-index: -99;
   }
   .features .container .container-bg .iphone-clay {
     width: 130%;
@@ -695,7 +754,7 @@
   }
   .features .container .container-bg .hook {
     position: absolute;
-    bottom: 135px;
+    bottom: 0px;
     left: -5%;
     width: 60%;
     height: 110px;
@@ -706,8 +765,9 @@
   }
   .features .container .right-column {
     position: relative;
-    top: -20px;
+    top: 75px;
     width: 100%;
+    padding: 0 30px;
   }
   .features .container .right-column .feature {
     margin-bottom: 30px;
@@ -726,6 +786,72 @@
     font-weight: 400;
     line-height: 26px;
     color: rgba(21, 20, 57, 0.8);
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .features .container .background-arrow {
+    width: 100%;
+  }
+  .features .container .background-arrow svg {
+    width: 150%;
+    height: 85%;
+    position: relative;
+    left: -10px;
+  }
+  .features .container .left-column {
+    position: absolute;
+    top: 114px;
+    left: 15px;
+    margin: 0;
+  }
+  .features .container .left-column .feature-title {
+    font-family: 'Eina02-Bold';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    color: #343438;
+    text-align: center;
+  }
+  .features .container .container-bg .circle {
+    position: absolute;
+    width: 115%;
+    height: 330px;
+    background: rgba(212, 212, 212, 0.25);
+    border-radius: 50%;
+    z-index: -99;
+  }
+  .features .container .container-bg .hook {
+    position: absolute;
+    bottom: 55px;
+    left: -5%;
+    width: 60%;
+    height: 90px;
+  }
+  .features .container .right-column {
+    top: 35px;
+  }
+}
+
+@media only screen and (min-width: 414px) {
+  .features .container .background-arrow svg {
+    left: -24px;
+  }
+  .features .container .left-column {
+    top: 126px;
+    left: 54px;
+  }
+  .features .container .container-bg {
+    height: 560px;
+  }
+  .features .container .container-bg .circle {
+    position: absolute;
+    width: 115%;
+    height: 330px;
+    background: rgba(212, 212, 212, 0.25);
+    border-radius: 50%;
+    z-index: -99;
   }
 }
 
@@ -1535,7 +1661,18 @@
 }
 
 body {
+  width: 100%;
+  height: auto;
   background: #fafafa;
   overflow-x: hidden;
+}
+
+@media only screen and (max-width: 425px) {
+  html,
+  body {
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
 }
 /*# sourceMappingURL=main.css.map */

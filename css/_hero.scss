@@ -108,89 +108,115 @@
 @media only screen and (max-width: 425px) {
     .hero {
         width: 100%;
-        height: 65%;
+        height: 470px;
+        background: linear-gradient(94.85deg, #009dff 0%, #68008c 100%);
 
         .container {
             width: 100%;
             padding: 0 24px;
             display: flex;
-            flex-direction: column-reverse;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
 
             &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                right: -1;
-                width: 50%;
-                height: 60vh;
-                background: $header_gradient_background;
-                border-bottom-left-radius: 190px;
-                z-index: -9;
+                display: none;
             }
 
             .left-column {
-                width: 100%;
-                padding: 16px 0;
-                color: $header-title-color;
+                width: 90%;
+                padding: 30px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
                 .hero-title {
                     margin: 0;
                     font-family: 'Eina02-SemiBold';
-                    font-size: 25px;
+                    font-size: 21px;
                     font-weight: 600;
-                    line-height: 36px;
+                    line-height: 33px;
+                    text-align: center;
+                    color: $nav-item-color;
                 }
 
                 .hero-subtitle {
-                    margin-top: 0px;
-                    font-family: 'Eina02-Light';
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 28px;
+                    display: none;
                 }
 
                 .hero-cta {
-                    margin-top: 24px;
-                    padding: 5px 55px;
+                    position: relative;
+                    top: 215px;
+                    width: 235px;
+                    height: 40px;
+                    padding: 5px 20px;
                     font-family: 'Eina02-Light';
                     font-size: 18px;
-                    line-height: 36px;
+                    line-height: 18px;
                     outline: none;
                     border: 0;
                     border-radius: 18px;
                     background: linear-gradient(
                         268.25deg,
                         #ff8946 6.75%,
-                        #f96464 98.78%
+                        #f96464 100%,
+                        #f96464 100%
                     );
                     color: #ffffff;
                     cursor: pointer;
                 }
 
                 .get-app {
-                    margin-top: 24px;
+                    position: relative;
+                    top: 210px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 16px;
                     padding: 0 2px;
+
+                    a {
+                        width: 70px;
+                        height: 20px;
+
+                        svg {
+                            width: 100%;
+                        }
+                    }
                 }
             }
 
             .right-column {
                 width: 100%;
-                height: 50vh;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    position: relative;
+                    top: -140px;
+                    right: 0;
+                    width: 114%;
+                    height: auto;
+                }
             }
         }
         .background-arrow {
-            width: 250px;
-            height: 500px;
-            position: absolute;
-            top: 300px;
-            left: -36px;
-            z-index: -99;
+            display: none;
+        }
+    }
+}
 
-            svg {
+// For screen smaller than 320px
+
+@media only screen and (max-width: 320px) {
+    .hero {
+        .container {
+            .left-column {
                 width: 100%;
-                height: 100%;
             }
         }
     }

@@ -8,6 +8,10 @@
         justify-content: center;
         align-items: center;
 
+        .background-arrow {
+            display: none;
+        }
+
         .left-column {
             width: 300px;
             margin-bottom: 250px;
@@ -92,48 +96,68 @@
 @media only screen and (max-width: 425px) {
     .features {
         width: 100%;
-        overflow-x: hidden;
 
         .container {
             position: relative;
             width: 100%;
-            padding: 0 24px;
+            padding: 60px 24px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
+            .background-arrow {
+                display: block;
+                width: 100%;
+                height: 375px;
+                position: static;
+
+                svg {
+                    width: 150%;
+                    height: 100%;
+                    position: relative;
+                    left: -14px;
+                }
+            }
+
             .left-column {
                 position: absolute;
-                top: 200px;
-                left: 85px;
+                top: 140px;
+                left: 40px;
                 margin: 0;
 
                 .feature-title {
                     font-family: 'Eina02-Bold';
-                    font-size: 32px;
+                    font-size: 44px;
                     font-weight: 700;
-                    line-height: 42px;
+                    line-height: 55px;
                     text-align: left;
                     color: #343438;
+                    text-align: center;
                 }
 
                 .feature-subtitle {
-                    margin-top: 10px;
+                    margin-top: 20px;
                     font-family: 'Eina02-Regular';
-                    font-size: 11px;
+                    font-size: 12px;
                     font-weight: 400;
-                    line-height: 16px;
-                    text-align: left;
+                    line-height: 17px;
+                    text-align: center;
                     color: rgba(21, 20, 57, 1);
                 }
             }
 
             .container-bg {
-                width: 100%;
+                width: 90%;
+                height: 500px;
 
                 .circle {
-                    display: none;
+                    position: absolute;
+                    width: 115%;
+                    height: 330px;
+                    background: rgba(212, 212, 212, 0.25);
+                    border-radius: 50%;
+                    z-index: -99;
                 }
 
                 .iphone-clay {
@@ -149,7 +173,7 @@
 
                 .hook {
                     position: absolute;
-                    bottom: 135px;
+                    bottom: 0px;
                     left: -5%;
                     width: 60%;
                     height: 110px;
@@ -163,8 +187,9 @@
 
             .right-column {
                 position: relative;
-                top: -20px;
+                top: 75px;
                 width: 100%;
+                padding: 0 30px;
 
                 .feature {
                     margin-bottom: 30px;
@@ -184,6 +209,94 @@
                         line-height: 26px;
                         color: rgba(21, 20, 57, 0.8);
                     }
+                }
+            }
+        }
+    }
+}
+
+// For screen smaller than 320
+
+@media only screen and (max-width: 320px) {
+    .features {
+        .container {
+            .background-arrow {
+                width: 100%;
+
+                svg {
+                    width: 150%;
+                    height: 85%;
+                    position: relative;
+                    left: -10px;
+                }
+            }
+
+            .left-column {
+                position: absolute;
+                top: 114px;
+                left: 15px;
+                margin: 0;
+
+                .feature-title {
+                    font-family: 'Eina02-Bold';
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 50px;
+                    text-align: center;
+                    color: #343438;
+                    text-align: center;
+                }
+            }
+
+            .container-bg {
+                .circle {
+                    position: absolute;
+                    width: 115%;
+                    height: 330px;
+                    background: rgba(212, 212, 212, 0.25);
+                    border-radius: 50%;
+                    z-index: -99;
+                }
+                .hook {
+                    position: absolute;
+                    bottom: 55px;
+                    left: -5%;
+                    width: 60%;
+                    height: 90px;
+                }
+            }
+
+            .right-column {
+                top: 35px;
+            }
+        }
+    }
+}
+
+// For screen smaller than 414px
+
+@media only screen and (min-width: 414px) {
+    .features {
+        .container {
+            .background-arrow {
+                svg {
+                    left: -24px;
+                }
+            }
+            .left-column {
+                top: 126px;
+                left: 54px;
+            }
+            .container-bg {
+                height: 560px;
+
+                .circle {
+                    position: absolute;
+                    width: 115%;
+                    height: 330px;
+                    background: rgba(212, 212, 212, 0.25);
+                    border-radius: 50%;
+                    z-index: -99;
                 }
             }
         }
