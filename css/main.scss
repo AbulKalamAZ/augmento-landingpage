@@ -18,19 +18,7 @@
 }
 
 body {
-    width: 100%;
-    height: auto;
     background: #fafafa;
-    overflow-x: hidden;
-}
-
-@media only screen and (max-width: 425px) {
-    html,
-    body {
-        width: 100%;
-        height: auto;
-        overflow-x: hidden;
-    }
 }
 
 // .site-loader {

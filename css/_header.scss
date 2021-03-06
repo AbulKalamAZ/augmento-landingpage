@@ -65,9 +65,10 @@
 @media only screen and (max-width: 425px) {
     .header {
         width: 100%;
-        height: 70px;
+        max-height: 70px;
         padding: 0;
         background: #fafafa;
+        overflow-y: hidden;
 
         .navbar {
             padding: 24px;
