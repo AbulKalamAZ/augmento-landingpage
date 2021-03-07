@@ -276,33 +276,33 @@
 
 // For screen smaller than 414px
 
-@media only screen and (min-width: 414px) {
-    .features {
-        .container {
-            .background-arrow {
-                svg {
-                    left: -24px;
-                }
-            }
-            .left-column {
-                top: 126px;
-                left: 54px;
-            }
-            .container-bg {
-                height: 560px;
+// @media only screen and (min-width: 414px) {
+//     .features {
+//         .container {
+//             .background-arrow {
+//                 svg {
+//                     left: -24px;
+//                 }
+//             }
+//             .left-column {
+//                 top: 126px;
+//                 left: 54px;
+//             }
+//             .container-bg {
+//                 height: 560px;
 
-                .circle {
-                    position: absolute;
-                    width: 115%;
-                    height: 330px;
-                    background: rgba(212, 212, 212, 0.25);
-                    border-radius: 50%;
-                    z-index: -99;
-                }
-            }
-        }
-    }
-}
+//                 .circle {
+//                     position: absolute;
+//                     width: 115%;
+//                     height: 330px;
+//                     background: rgba(212, 212, 212, 0.25);
+//                     border-radius: 50%;
+//                     z-index: -99;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 // For screen wider than 1960
 

@@ -838,27 +838,6 @@
   }
 }
 
-@media only screen and (min-width: 414px) {
-  .features .container .background-arrow svg {
-    left: -24px;
-  }
-  .features .container .left-column {
-    top: 126px;
-    left: 54px;
-  }
-  .features .container .container-bg {
-    height: 560px;
-  }
-  .features .container .container-bg .circle {
-    position: absolute;
-    width: 115%;
-    height: 330px;
-    background: rgba(212, 212, 212, 0.25);
-    border-radius: 50%;
-    z-index: -99;
-  }
-}
-
 @media only screen and (min-width: 1960px) {
   .features .container {
     padding: 200px 10% 50px 10%;
