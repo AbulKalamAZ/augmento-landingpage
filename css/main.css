@@ -1672,7 +1672,102 @@
 
 @media only screen and (max-width: 425px) {
   .pricing-table {
-    display: none;
+    width: 100%;
+  }
+  .pricing-table .container {
+    width: 100%;
+    padding: 80px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pricing-table .container .section-header {
+    width: 100%;
+    margin-bottom: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pricing-table .container .section-header .icons {
+    width: 60%;
+    margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .pricing-table .container .section-header .title {
+    margin-bottom: 35px;
+    font-family: 'Eina02-Bold';
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #231d4f;
+  }
+  .pricing-table .container .section-header .sub-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    color: rgba(21, 20, 57, 0.4);
+  }
+  .pricing-table .container .table {
+    min-width: 90%;
+    max-width: 100%;
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    row-gap: 60px;
+    border: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .pricing-table .container .table .plan {
+    width: 100%;
+    min-height: 500px;
+    max-width: 540px;
+    padding: 40px;
+    background: #ffffff;
+    border: 0.5px solid #c7c7c7;
+    border-radius: 26px;
+    -webkit-box-shadow: 0px 23px 34px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 23px 34px 0px rgba(0, 0, 0, 0.05);
+  }
+  .pricing-table .container .table .most-popular {
+    padding: 50px 40px 40px 40px;
+    background: linear-gradient(69.28deg, #009dff 18.5%, #68008c 136.36%);
+    border-radius: 26px;
+    -webkit-box-shadow: 0px 22px 20px 0px rgba(91, 164, 254, 0.33);
+            box-shadow: 0px 22px 20px 0px rgba(91, 164, 254, 0.33);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1771,7 +1866,7 @@
     width: 100%;
     margin-bottom: 50px;
     font-family: 'Eina02-SemiBold';
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 600;
     line-height: 42px;
     text-align: center;
