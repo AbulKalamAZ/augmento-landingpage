@@ -1237,7 +1237,77 @@
 
 @media only screen and (max-width: 425px) {
   .screen {
-    display: none;
+    width: 100%;
+    overflow: hidden;
+  }
+  .screen .container {
+    width: 100%;
+    padding: 50px 24px 0 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .screen .container .section-title {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  .screen .container .section-title .title {
+    padding: 0 30px;
+    margin-bottom: 25px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+    color: white;
+  }
+  .screen .container .section-title .sub-title {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 26px;
+    color: white;
+  }
+  .screen .container .code-editor {
+    min-width: 100%;
+    height: 150px;
+  }
+  .screen .container .code-editor .screen-header {
+    width: 100%;
+    height: 12px;
+    padding: 13px;
+    background: #171c23;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .screen .container .code-editor .screen-header div {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 4px;
+  }
+  .screen .container .code-editor .editor-screen {
+    width: 100%;
+    height: 138px;
   }
 }
 
@@ -1682,14 +1752,14 @@
 @media only screen and (max-width: 425px) {
   .footer {
     width: 100%;
-    padding: 30px 24px;
+    padding: 50px 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1699,8 +1769,9 @@
   }
   .footer .copyright-message {
     width: 100%;
+    margin-bottom: 50px;
     font-family: 'Eina02-SemiBold';
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 600;
     line-height: 42px;
     text-align: center;
