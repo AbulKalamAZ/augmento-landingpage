@@ -71,9 +71,18 @@
                     border-radius: 55px;
                 }
 
-                .img {
-                    width: 400px;
-                    height: 790px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .shadow {
+                    position: absolute;
+                    bottom: -56px;
+                    width: 140%;
+                    height: 116px;
+                    background-image: url(../images/Shadow.png);
+                    right: -46px;
                 }
             }
             .hook {
@@ -130,6 +139,7 @@
                 width: 100%;
                 height: 375px;
                 position: static;
+                z-index: -99;
 
                 svg {
                     width: 150%;
@@ -184,9 +194,13 @@
                     height: 110%;
                     z-index: -9;
 
-                    svg {
+                    img {
                         width: 100%;
                         height: 100%;
+                    }
+
+                    .shadow {
+                        display: none;
                     }
                 }
 
