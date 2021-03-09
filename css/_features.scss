@@ -57,7 +57,7 @@
             }
             .iphone-clay {
                 position: relative;
-                width: 400px;
+                max-width: 390px;
                 height: 790px;
 
                 .iphone-bg {
@@ -140,6 +140,7 @@
                 height: 375px;
                 position: static;
                 z-index: -99;
+                margin-bottom: 20px;
 
                 svg {
                     width: 150%;
@@ -190,8 +191,8 @@
                 }
 
                 .iphone-clay {
-                    width: 95%;
-                    height: 110%;
+                    width: 85%;
+                    height: 115%;
                     z-index: -9;
 
                     img {
@@ -206,7 +207,7 @@
 
                 .hook {
                     position: absolute;
-                    bottom: 0px;
+                    bottom: -35px;
                     left: -5%;
                     width: 60%;
                     height: 110px;
@@ -220,7 +221,7 @@
 
             .right-column {
                 position: relative;
-                top: 75px;
+                top: 100px;
                 width: 100%;
                 padding: 0 30px;
 

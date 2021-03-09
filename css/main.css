@@ -643,7 +643,7 @@
 
 .features .container .container-bg .iphone-clay {
   position: relative;
-  width: 400px;
+  max-width: 390px;
   height: 790px;
 }
 
@@ -732,6 +732,7 @@
     height: 375px;
     position: static;
     z-index: -99;
+    margin-bottom: 20px;
   }
   .features .container .background-arrow svg {
     width: 150%;
@@ -776,8 +777,8 @@
     z-index: -99;
   }
   .features .container .container-bg .iphone-clay {
-    width: 95%;
-    height: 110%;
+    width: 85%;
+    height: 115%;
     z-index: -9;
   }
   .features .container .container-bg .iphone-clay img {
@@ -789,7 +790,7 @@
   }
   .features .container .container-bg .hook {
     position: absolute;
-    bottom: 0px;
+    bottom: -35px;
     left: -5%;
     width: 60%;
     height: 110px;
@@ -800,7 +801,7 @@
   }
   .features .container .right-column {
     position: relative;
-    top: 75px;
+    top: 100px;
     width: 100%;
     padding: 0 30px;
   }
