@@ -56,7 +56,25 @@
                 z-index: -99;
             }
             .iphone-clay {
-                position: absolute;
+                position: relative;
+                width: 400px;
+                height: 790px;
+
+                .iphone-bg {
+                    position: absolute;
+                    top: 2px;
+                    right: 2px;
+                    width: 99%;
+                    height: 98%;
+                    background: #c4c4c4;
+                    z-index: -99;
+                    border-radius: 55px;
+                }
+
+                .img {
+                    width: 400px;
+                    height: 790px;
+                }
             }
             .hook {
                 position: absolute;
@@ -162,8 +180,8 @@
                 }
 
                 .iphone-clay {
-                    width: 130%;
-                    height: calc(width * 1.4);
+                    width: 95%;
+                    height: 110%;
                     z-index: -9;
 
                     svg {
