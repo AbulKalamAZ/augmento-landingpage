@@ -170,9 +170,6 @@ gsap.registerPlugin(ScrollTrigger);
 const nav_timeline = gsap.timeline({
     defaults: { duration: 0.7, reversed: true },
 });
-const mobile_menu = document.querySelector('.mobile-menu-toggler');
-const nav_list = document.querySelector('.nav-list');
-let isClicked = false;
 
 const header_timeline = gsap.timeline({ defaults: { duration: 0.7 } });
 const hero_title = document.querySelector('.hero-title');
@@ -226,21 +223,3 @@ header_timeline
             // markers: true,
         },
     });
-
-nav_timeline.to(nav_list, {
-    x: '0',
-});
-
-mobile_menu.addEventListener('click', (e) => {
-    e.stopPropagation();
-
-    if (isClicked) {
-        console.log(isClicked);
-        isClicked = !isClicked;
-        nav_timeline.reverse();
-    } else {
-        console.log(isClicked);
-        isClicked = !isClicked;
-        nav_timeline.play();
-    }
-});

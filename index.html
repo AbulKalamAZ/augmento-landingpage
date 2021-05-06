@@ -481,21 +481,21 @@
     <script type="module" src="./js/main.js"></script>
     
     <script>
-        // const mobile_menu_toggler = document.querySelector('.mobile-menu-toggler');
-        // const nav_list = document.querySelector('.nav-list');
+        const mobile_menu_toggler = document.querySelector('.mobile-menu-toggler');
+        const nav_list = document.querySelector('.nav-list');
 
 
-        // mobile_menu_toggler.addEventListener('click', () => {
-        //     if(mobile_menu_toggler.classList.contains('open-mobile-menu')) {
-        //         mobile_menu_toggler.classList.remove('open-mobile-menu')
-        //         nav_list.style.transform = 'translate(100%, 0)';
-        //         nav_list.style.position = 'absolute';
-        //     } else {
-        //         mobile_menu_toggler.classList.add('open-mobile-menu');
-        //         nav_list.style.transform = 'none';
-        //         nav_list.style.position = 'fixed';
-        //     }
-        // })
+        mobile_menu_toggler.addEventListener('click', () => {
+            if(mobile_menu_toggler.classList.contains('open-mobile-menu')) {
+                mobile_menu_toggler.classList.remove('open-mobile-menu')
+                nav_list.style.transform = 'translate(100%, 0)';
+                nav_list.style.position = 'absolute';
+            } else {
+                mobile_menu_toggler.classList.add('open-mobile-menu');
+                nav_list.style.transform = 'none';
+                nav_list.style.position = 'fixed';
+            }
+        })
 
     </script>
 </body>
