@@ -16,6 +16,11 @@
             width: 300px;
             margin-bottom: 250px;
 
+            .feature {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
             .feature-title {
                 font-family: 'Eina02-Bold';
                 font-size: 44px;
@@ -97,6 +102,9 @@
 
             .feature {
                 margin-bottom: 30px;
+
+                transform: translateX(100px);
+                opacity: 0;
                 h3 {
                     font-family: 'Eina02-Bold';
                     font-size: 18px;
@@ -143,6 +151,11 @@
                 justify-content: center;
                 align-items: center;
                 margin-bottom: 25px;
+
+                .feature {
+                    transform: translateX(0px);
+                    opacity: 1;
+                }
 
                 .background-arrow {
                     position: absolute;
@@ -232,6 +245,10 @@
 
                 .feature {
                     margin-bottom: 30px;
+
+                    transform: translateX(0px);
+                    opacity: 1;
+
                     h3 {
                         font-family: 'Eina02-Bold';
                         font-size: 18px;
@@ -392,7 +409,6 @@
             padding: 50px 10%;
 
             .left-column {
-                width: 400px;
                 margin-bottom: 350px;
                 padding-left: 100px;
             }

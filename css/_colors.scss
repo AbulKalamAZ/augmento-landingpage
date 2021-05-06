@@ -8,11 +8,12 @@ $nav-item-color: #ffffff;
 
 $header_background: #fafafa;
 
-$header_gradient_background: linear-gradient(
-    94.85deg,
-    #009dff 0%,
-    #68008c 100%
-);
+$header_gradient_background: #171c23;
+// $header_gradient_background: linear-gradient(
+//     94.85deg,
+//     #009dff 0%,
+//     #68008c 100%
+// );
 
 $header-title-color: #343438;
 
@@ -37,3 +38,9 @@ $pricing-plan-duration-color: rgba(132, 129, 153, 1);
 $pricing-plan-checkbox-bg-color: rgba(184, 184, 184, 0.13);
 $pricing-plan-checkbox-bg-color-on-select: rgba(255, 255, 255, 0.8);
 $get-plan-button-background-color: rgba(151, 151, 151, 0.1);
+$most-popular-background-color: #343940;
+$most-popular-background-color-on-mobile: linear-gradient(
+    69.28deg,
+    #c2c2c2 18.5%,
+    #196f8d 136.36%
+);

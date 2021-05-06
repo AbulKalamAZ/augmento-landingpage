@@ -188,8 +188,8 @@
                     </svg>
                 </div>
 
-                <h1 class="feature-title"><span>67%</span> <br> Increased <br> conversion*</h1>
-                <p class="feature-subtitle">* Source: Independent research by TED <br> 2020x </p>
+                <h1 class="feature-title feature"><span>67%</span> <br> Increased <br> conversion*</h1>
+                <p class="feature-subtitle feature">* Source: Independent research by TED <br> 2020x </p>
             </div>
             <div class="container-bg">
                 <div class="circle">
@@ -234,7 +234,7 @@
                 </div>
             </div>
 
-            <div class="right-column">
+            <div class="right-column feature-container">
                 <div class="feature">
                     <h3>Full control</h3>
                     <p>Easily change and tweak your content when you need to, however you want. No more third party vendor lock-in.</p>
@@ -476,30 +476,26 @@
 
 
     <!-- links to custom custom javascripts files -->
-    <!-- <script type="module" src="./js/main.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+    
     <script>
-        const price_plans = document.querySelectorAll('.plan');
-
-        VanillaTilt.init(price_plans);
-    </script> -->
-
-    <script>
-        const mobile_menu_toggler = document.querySelector('.mobile-menu-toggler');
-        const nav_list = document.querySelector('.nav-list');
+        // const mobile_menu_toggler = document.querySelector('.mobile-menu-toggler');
+        // const nav_list = document.querySelector('.nav-list');
 
 
-        mobile_menu_toggler.addEventListener('click', () => {
-            if(mobile_menu_toggler.classList.contains('open-mobile-menu')) {
-                mobile_menu_toggler.classList.remove('open-mobile-menu')
-                nav_list.style.transform = 'translate(100%, 0)';
-                nav_list.style.position = 'absolute';
-            } else {
-                mobile_menu_toggler.classList.add('open-mobile-menu');
-                nav_list.style.transform = 'none';
-                nav_list.style.position = 'fixed';
-            }
-        })
+        // mobile_menu_toggler.addEventListener('click', () => {
+        //     if(mobile_menu_toggler.classList.contains('open-mobile-menu')) {
+        //         mobile_menu_toggler.classList.remove('open-mobile-menu')
+        //         nav_list.style.transform = 'translate(100%, 0)';
+        //         nav_list.style.position = 'absolute';
+        //     } else {
+        //         mobile_menu_toggler.classList.add('open-mobile-menu');
+        //         nav_list.style.transform = 'none';
+        //         nav_list.style.position = 'fixed';
+        //     }
+        // })
 
     </script>
 </body>
