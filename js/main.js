@@ -167,9 +167,9 @@
 
 gsap.registerPlugin(ScrollTrigger);
 
-const nav_timeline = gsap.timeline({
-    defaults: { duration: 0.7, reversed: true },
-});
+// const nav_timeline = gsap.timeline({
+//     defaults: { duration: 0.7, reversed: true },
+// });
 
 const header_timeline = gsap.timeline({ defaults: { duration: 0.7 } });
 const hero_title = document.querySelector('.hero-title');
@@ -182,6 +182,12 @@ const features_right_col = document.querySelectorAll('.feature');
 
 const case_studies = document.querySelector('.case_studies');
 const cases = document.querySelectorAll('.case');
+
+const modal_timeline = new TimelineLite({ paused: true, reversed: true });
+const contac_form_modal = document.querySelector('.contact-form-modal');
+const modal_container = document.querySelector('.modal-container');
+const contact = document.querySelector('.contact');
+const cancel = document.querySelector('.cancel');
 
 header_timeline
     .to([hero_title, hero_subtitle, hero_cta, hero_get_app], {
@@ -223,3 +229,32 @@ header_timeline
             // markers: true,
         },
     });
+
+modal_timeline
+    .to(contac_form_modal, 0.45, {
+        display: 'block',
+        opacity: 1,
+        ease: 'power1.in',
+    })
+    .to(modal_container, 0.45, {
+        y: 0,
+        opacity: 1,
+        scale: 1,
+        ease: 'power1.in',
+    });
+
+contact.addEventListener('click', (e) => {
+    e.stopPropagation();
+    modal_timeline.play();
+});
+contac_form_modal.addEventListener('click', (e) => {
+    e.stopPropagation();
+
+    if (e.target.className === 'contact-form-modal') {
+        modal_timeline.reverse();
+    }
+});
+cancel.addEventListener('click', (e) => {
+    e.stopPropagation();
+    modal_timeline.reverse();
+});

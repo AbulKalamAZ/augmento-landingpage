@@ -267,6 +267,271 @@
   }
 }
 
+.contact-form-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999999999;
+  opacity: 0;
+}
+
+.contact-form-modal .modal-container {
+  width: 60%;
+  margin: 100px auto;
+  padding: 10px;
+  -webkit-transform: translateY(250px);
+          transform: translateY(250px);
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  opacity: 0;
+}
+
+.contact-form-modal .modal-container .screen {
+  position: relative;
+  background: #3e3e3e;
+  border-radius: 15px;
+}
+
+.contact-form-modal .modal-container .screen::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.contact-form-modal .modal-container .screen .screen-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  background: #4d4d4f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.contact-form-modal .modal-container .screen .screen-header .screen-header-left {
+  margin-right: auto;
+}
+
+.contact-form-modal .modal-container .screen .screen-header .screen-header-left .screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.contact-form-modal .modal-container .screen .screen-header .screen-header-left .close {
+  background: #ed1c6f;
+}
+
+.contact-form-modal .modal-container .screen .screen-header .screen-header-left .maximize {
+  background: #e8e925;
+}
+
+.contact-form-modal .modal-container .screen .screen-header .screen-header-left .minimize {
+  background: #74c54f;
+}
+
+.contact-form-modal .modal-container .screen .screen-header .screen-header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-form-modal .modal-container .screen .screen-header .screen-header-right .screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.contact-form-modal .modal-container .screen .screen-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .screen-body-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 50px;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .left .app-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  color: #ea1d6f;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .left .app-title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #ea1d6f;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .left .app-contact {
+  margin-top: auto;
+  font-size: 12px;
+  color: #888;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .app-form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .app-form-group .app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .app-form-group .app-form-control::-webkit-input-placeholder {
+  color: #666;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .app-form-group .app-form-control:-ms-input-placeholder {
+  color: #666;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .app-form-group .app-form-control::-ms-input-placeholder {
+  color: #666;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .app-form-group .app-form-control::placeholder {
+  color: #666;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .app-form-group .app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .message {
+  margin-top: 40px;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .buttons .app-form-button {
+  background: none;
+  margin-left: 20px;
+  border: none;
+  color: #ea1d6f;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+}
+
+.contact-form-modal .modal-container .screen .screen-body .right .app-form .buttons .app-form-button:hover {
+  color: #b9134f;
+}
+
+@media only screen and (max-width: 425px) {
+  .modal-container {
+    width: 100% !important;
+  }
+  .screen-body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .screen-body .screen-body-item {
+    padding: 20px !important;
+  }
+  .screen-body .screen-body-item .app-title {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .screen-body .screen-body-item .app-title span {
+    margin-right: 12px;
+  }
+  .screen-body .screen-body-item .app-title:after {
+    display: none;
+  }
+  .screen-body .screen-body-item .app-contact {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal-container {
+    width: 100% !important;
+  }
+  .screen-body {
+    padding: 20px;
+  }
+  .screen-body .screen-body-item {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1960px) {
+  .modal-container {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .modal-container {
+    width: 35% !important;
+  }
+}
+
 .hero {
   width: 100%;
   height: 80vh;
