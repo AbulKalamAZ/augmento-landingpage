@@ -10,7 +10,7 @@
     opacity: 0;
 
     .modal-container {
-        width: 60%;
+        width: 50%;
         margin: 100px auto;
         padding: 10px;
         transform: translateY(250px);
@@ -91,12 +91,13 @@
                 .left {
                     display: flex;
                     flex-direction: column;
+                    font-family: 'Eina02-Bold';
 
                     .app-title {
                         display: flex;
                         flex-direction: column;
                         position: relative;
-                        color: #ea1d6f;
+                        color: #20b2e5;
                         font-size: 26px;
                         font-weight: 600;
 
@@ -108,7 +109,7 @@
                             bottom: -10px;
                             width: 25px;
                             height: 4px;
-                            background: #ea1d6f;
+                            background: #20b2e5;
                         }
                     }
                     .app-contact {
@@ -119,6 +120,7 @@
                 }
 
                 .right {
+                    font-family: 'Eina02-Bold';
                     .app-form {
                         .app-form-group {
                             margin-bottom: 15px;
@@ -157,14 +159,15 @@
                                 background: none;
                                 margin-left: 20px;
                                 border: none;
-                                color: #ea1d6f;
+                                color: #20b2e5;
+                                font-family: 'Eina02-Bold';
                                 font-size: 16px;
                                 font-weight: 600;
                                 cursor: pointer;
                                 outline: none;
 
                                 &:hover {
-                                    color: #b9134f;
+                                    color: #00bbff;
                                 }
                             }
                         }
@@ -219,11 +222,11 @@
 
 @media only screen and (min-width: 1960px) {
     .modal-container {
-        width: 50% !important;
+        width: 35% !important;
     }
 }
 @media only screen and (min-width: 2560px) {
     .modal-container {
-        width: 35% !important;
+        width: 25% !important;
     }
 }
