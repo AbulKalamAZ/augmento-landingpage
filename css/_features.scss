@@ -67,11 +67,14 @@
 
                 .iphone-bg {
                     position: absolute;
-                    top: 2px;
+                    top: 5px;
                     right: 2px;
                     width: 99%;
                     height: 98%;
-                    background: #c4c4c4;
+                    background: url('../images/demo.gif');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
                     z-index: -99;
                     border-radius: 55px;
                 }
