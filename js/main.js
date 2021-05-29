@@ -187,6 +187,7 @@ const modal_timeline = new TimelineLite({ paused: true, reversed: true });
 const contac_form_modal = document.querySelector('.contact-form-modal');
 const modal_container = document.querySelector('.modal-container');
 const contact = document.querySelector('.contact');
+const footerContact = document.querySelector('.footer-contact');
 const cancel = document.querySelector('.cancel');
 
 header_timeline
@@ -244,6 +245,10 @@ modal_timeline
     });
 
 contact.addEventListener('click', (e) => {
+    e.stopPropagation();
+    modal_timeline.play();
+});
+footerContact.addEventListener('click', (e) => {
     e.stopPropagation();
     modal_timeline.play();
 });
